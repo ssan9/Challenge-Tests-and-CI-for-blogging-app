@@ -13,7 +13,7 @@ const should = chai.should();
 // see: https://github.com/chaijs/chai-http
 chai.use(chaiHttp);
 
-describe('Blog Post', function() {
+describe('Blog Posts', function() {
 
 	// Before our tests run, we activate the server. Our `runServer`
 	// function returns a promise, and we return the promise by 
@@ -83,6 +83,15 @@ describe('Blog Post', function() {
 	  	});
 	});
 
+	it('should error if POST missing expected values', function() {
+    	const badRequestData = {};
+    	return chai.request(app)
+      		.post('/blog-posts')
+      		.send(badRequestData)
+      		.catch(function(res) {
+       			 res.should.have.status(400);
+      		});
+  	});
 	// test strategy:
 	//  1. initialize some update data (we won't have an `id` yet)
 	//  2. make a GET request so we can get a post to update

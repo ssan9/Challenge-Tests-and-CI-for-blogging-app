@@ -4,7 +4,7 @@
   "description": "Adding integration tests for all four of the API endpoints\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[DAdd\u001b[3~\u001b[3d\u001b[3~\u001b[C\u001b[Adding",
   "main": "blogpostsRouter.js",
   "scripts": {
-    "test": "mocha",
+    "test": "mocha -exit",
     "start": "node server.js"
   },
   "author": "",
